@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Zimowy Dyrygent ❄</title>
+<title>Privacy Policy — Zimowy Asystent ❄</title>
 <style>
   :root {
     --bg: #0d0f14;
@@ -124,29 +124,31 @@
   <div class="doc-header">
     <div class="icon">❄</div>
     <h1>Privacy Policy</h1>
-    <div class="meta">🤖 <b>Bot:</b> Zimowy Dyrygent ❄</div>
-    <div class="meta">📅 <b>Effective Date:</b> July 8, 2026</div>
+    <div class="meta">🤖 <b>Bot:</b> Zimowy Asystent ❄</div>
+    <div class="meta">📅 <b>Effective Date:</b> September 13, 2026</div>
   </div>
 
   <div class="intro-box">
-    This Privacy Policy explains what data Zimowy Dyrygent ❄ processes on Discord servers, why it is processed, and how long it is retained.
+    This Privacy Policy explains what data Zimowy Asystent ❄ processes on Discord servers, why it is processed, and how long it is retained. Zimowy Asystent combines recruitment/moderation features together with member statistics, verification, and welcome/goodbye messaging in a single bot.
   </div>
 
   <section>
     <h2>📋 Data We Collect</h2>
     <div class="card">
       <ul class="plain">
-        <li><span class="emoji">👤</span> User IDs (of applicants, moderators, and staff who interact with the bot)</li>
+        <li><span class="emoji">👤</span> User IDs (of applicants, moderators, staff, and members who interact with the bot)</li>
         <li><span class="emoji">🏠</span> Server (Guild) ID</li>
-        <li><span class="emoji">💬</span> Channel IDs used for recruitment, announcements, and moderation features</li>
-        <li><span class="emoji">🎭</span> Role IDs (used for permission checks and role assignment upon recruitment approval)</li>
+        <li><span class="emoji">💬</span> Channel IDs used for recruitment, announcements, moderation, statistics counters, and verification features</li>
+        <li><span class="emoji">🎭</span> Role IDs (used for permission checks and role assignment upon recruitment approval or verification)</li>
         <li><span class="emoji">📝</span> Recruitment application answers submitted through forms (e.g. nickname, first name, age, availability, experience, portfolio links, contact information — the exact fields depend on the position applied for)</li>
         <li><span class="emoji">✍️</span> Rejection reason text entered by staff when declining an application</li>
         <li><span class="emoji">⏱️</span> Timestamps related to recruitment cooldowns and channel access restrictions</li>
         <li><span class="emoji">📌</span> Application status (pending / resolved) for each user and role</li>
+        <li><span class="emoji">🟢</span> Presence status (online / offline) — used only to count how many staff/admins are currently online</li>
+        <li><span class="emoji">📨</span> Invite codes and invite usage counts, and a record of who invited whom, used for the invite-tracking and member statistics features</li>
       </ul>
       <div class="note">
-        The bot does <b>not</b> use the <b>Message Content Intent</b> and does <b>not</b> read, scan, or store the content of ordinary server messages. The bot also does <b>not</b> use the <b>Presence Intent</b> (online/offline status of other users).
+        The bot does <b>not</b> use the <b>Message Content Intent</b> and does <b>not</b> read, scan, or store the content of ordinary server messages. Presence status is used only in aggregate to power live "admins online" counters and is not stored long-term or shared with third parties.
       </div>
     </div>
   </section>
@@ -163,6 +165,10 @@
         <tr><td>Sending applicants a DM about the outcome of their application</td><td>User ID, rejection reason</td></tr>
         <tr><td>Permission verification for staff commands and buttons</td><td>User ID, Role ID</td></tr>
         <tr><td>Temporary channel access restrictions</td><td>Channel ID, Guild ID, restriction end time</td></tr>
+        <tr><td>Member &amp; admin statistics (live counter channels)</td><td>Guild ID, Channel ID, Role ID, Presence status</td></tr>
+        <tr><td>Admin online tracking</td><td>User ID, Role ID, Presence status</td></tr>
+        <tr><td>User verification (role assignment)</td><td>User ID, Role ID</td></tr>
+        <tr><td>Welcome &amp; goodbye messages, invite tracking</td><td>User ID, invite code, inviter's User ID and tag</td></tr>
       </table>
     </div>
   </section>
@@ -171,7 +177,7 @@
     <h2>🗄️ Data Storage</h2>
     <div class="card">
       <p class="desc">
-        Data is stored locally in a database on the bot's hosting server and used exclusively to support the recruitment and moderation features described in this Policy. Recruitment cooldown records are automatically deleted once the cooldown period expires. Application answers may be retained for record-keeping of past recruitment decisions unless deletion is requested.
+        Data is stored locally in a database on the bot's hosting server and used exclusively to support the features described in this Policy. Recruitment cooldown records are automatically deleted once the cooldown period expires. Application answers may be retained for record-keeping of past recruitment decisions unless deletion is requested. Invite-tracking and statistics data are kept only for as long as needed to provide those features, and related records are removed when a user leaves the server.
       </p>
     </div>
   </section>
@@ -200,7 +206,7 @@
     <h2>✋ Your Rights</h2>
     <div class="card">
       <p class="desc">
-        You may request deletion of your data (application answers, cooldown records, pending application status) at any time by contacting server staff through the ticket system. You may also withdraw a pending application or choose not to use the bot's recruitment features at any time.
+        You may request deletion of your data (application answers, cooldown records, pending application status, invite-tracking records) at any time by contacting server staff through the ticket system. You may also withdraw a pending application or choose not to use the bot's recruitment features at any time.
       </p>
     </div>
   </section>
@@ -224,7 +230,7 @@
   </section>
 
   <footer>
-    Zimowy Dyrygent ❄ — Discord Bot &nbsp;•&nbsp; Last updated: July 8, 2026
+    Zimowy Asystent ❄ — Discord Bot &nbsp;•&nbsp; Last updated: September 13, 2026
   </footer>
 
 </div>
